@@ -1,0 +1,15 @@
+:root { --bg: #fbfaf8; --fg: #1d1b19; --muted: #6b655e; --accent: #b86e12; --rule: #e7e2db; color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg: #161412; --fg: #f1ece6; --muted: #a39b91; --accent: #f0a443; --rule: #2e2a26; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 56px 16px 80px; }
+header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; border-bottom: 1px solid var(--rule); padding-bottom: 16px; margin-bottom: 32px; }
+header a.brand { font-weight: 700; font-size: 20px; color: var(--fg); text-decoration: none; }
+nav a { margin-left: 16px; color: var(--muted); text-decoration: none; }
+nav a[aria-current] { color: var(--fg); }
+h1 { font-size: 34px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 21px; margin: 36px 0 8px; }
+p, li { color: var(--fg); }
+.lede { color: var(--muted); font-size: 19px; margin-top: 0; }
+a { color: var(--accent); }
+footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; }
